@@ -14,8 +14,8 @@ public class Controller {
 	@Autowired
 	private Service service;
 	
-    @RequestMapping("/sayhi/{message}")
-    public String sayHiService(
+    @RequestMapping("/sayhello/{message}")
+    public String sayHelloService(
             @PathVariable String message) {
         return service.sayHello(message);
     }
