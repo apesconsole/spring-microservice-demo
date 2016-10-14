@@ -16,7 +16,7 @@ public class Controller {
 	private RestTemplate restTemplate; 
 	
     @RequestMapping("/consumer/{message}")
-    public String serviceInstancesByApplicationName(
+    public String getMessageFromServer(
             @PathVariable String message) {
         return restTemplate.getForObject("http://APES-SERVICE/sayhi/" + message, String.class);
     }
