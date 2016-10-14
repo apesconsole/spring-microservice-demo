@@ -15,7 +15,7 @@ public class Controller {
 	private Service service;
 	
     @RequestMapping("/sayhi/{message}")
-    public String serviceInstancesByApplicationName(
+    public String sayHiService(
             @PathVariable String message) {
         return service.sayHello(message);
     }
